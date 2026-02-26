@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Order Processing Company</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="home-layout">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">OP</div>
+        <div>
+          <h1>Order Processing Company</h1>
+          <p>Register customers and manage their data efficiently.</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a class="active" href="index.html">HOME</a>
+        <a href="register.html">Register Customers</a>
+      </nav>
+    </header>
+
+    <main class="container two-columns">
+      <!-- LEFT SECTION -->
+      <section class="card">
+        <h2>About Us</h2>
+        <p>
+          We are an order processing organization that registers customers and
+          stores their information securely in a structured database.
+        </p>
+        <p>
+          Our goal is to ensure smooth order placement and accurate customer
+          tracking.
+        </p>
+        <a class="btn" href="register.html">Start Registration</a>
+      </section>
+
+      <!-- RIGHT SECTION -->
+      <section class="card">
+        <h2>Our Services</h2>
+        <ul class="list">
+          <li>Customer Registration</li>
+          <li>Database Storage</li>
+          <li>Order Preparation Support</li>
+          <li>Customer Record Management</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small>© <span id="year"></span> Order Processing Company</small>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

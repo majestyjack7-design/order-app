@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Customers</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="brand">
+        <div class="logo">OP</div>
+        <div>
+          <h1>Customer Registration</h1>
+          <p>Fill the form to register customers into the database.</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">HOME</a>
+        <a class="active" href="register.html">Register Customers</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Registration Form</h2>
+
+        <form id="customerForm" class="form">
+          <label>
+            Full Name
+            <input type="text" id="name" required placeholder="e.g. Ada Uche" />
+          </label>
+
+          <label>
+            Email
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="e.g. ada@gmail.com"
+            />
+          </label>
+
+          <label>
+            Phone Number
+            <input
+              type="tel"
+              id="phone"
+              required
+              placeholder="e.g. 08012345678"
+            />
+          </label>
+
+          <button class="btn" type="submit">Register</button>
+          <p class="msg" id="msg"></p>
+        </form>
+      </section>
+
+      <section class="card">
+        <div class="summary-head">
+          <h2>Registered Customers Summary</h2>
+          <button class="btn outline" id="loadSummary" type="button">
+            Load Summary
+          </button>
+        </div>
+
+        <p class="count" id="totalCount">Total Registered Customers: 0</p>
+
+        <div class="table-wrap">
+          <table class="table" id="summaryTable">
+            <thead>
+              <tr>
+                <th>Full Name</th>
+                <th>Phone Number</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small>© <span id="year"></span> Order Processing Company</small>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
