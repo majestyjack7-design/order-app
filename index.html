@@ -3,54 +3,211 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Order Processing Company</title>
+    <title>OrderFlow | Smart Order Processing</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="home-layout">
-    <header class="header">
-      <div class="brand">
-        <div class="logo">OP</div>
-        <div>
-          <h1>Order Processing Company</h1>
-          <p>Register customers and manage their data efficiently.</p>
-        </div>
-      </div>
 
-      <nav class="nav">
-        <a class="active" href="index.html">HOME</a>
-        <a href="register.html">Register Customers</a>
+  <body class="home-layout">
+    <header class="site-header">
+      <nav class="navbar">
+        <a href="index.html" class="brand">
+          <span class="logo">OF</span>
+          <span>
+            <strong>OrderFlow</strong>
+            <small>Smart Order Processing</small>
+          </span>
+        </a>
+
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="register.html">Register Customers</a>
+        </div>
       </nav>
     </header>
 
-    <main class="container two-columns">
-      <!-- LEFT SECTION -->
-      <section class="card">
-        <h2>About Us</h2>
-        <p>
-          We are an order processing organization that registers customers and
-          stores their information securely in a structured database.
-        </p>
-        <p>
-          Our goal is to ensure smooth order placement and accurate customer
-          tracking.
-        </p>
-        <a class="btn" href="register.html">Start Registration</a>
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Fast. Accurate. Customer-ready.</p>
+
+          <h1>Process customer orders with clarity, speed, and confidence.</h1>
+
+          <p class="hero-text">
+            OrderFlow helps businesses register customers, organise order
+            information, and manage customer records in one clean and simple
+            workflow.
+          </p>
+
+          <div class="hero-actions">
+            <a href="register.html" class="btn primary">Start Registration</a>
+            <a href="#features" class="btn secondary">Explore Features</a>
+          </div>
+
+          <div class="trust-row">
+            <span>✓ Simple customer registration</span>
+            <span>✓ Clean records</span>
+            <span>✓ Fast workflow</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="dashboard-card">
+            <div class="dashboard-top">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="order-preview">
+              <div>
+                <small>Today’s Orders</small>
+                <h2>128</h2>
+              </div>
+              <strong class="status">+24%</strong>
+            </div>
+
+            <div class="progress-block">
+              <div class="progress-label">
+                <span>Customer verification</span>
+                <strong>82%</strong>
+              </div>
+              <div class="bar">
+                <span style="width: 82%"></span>
+              </div>
+            </div>
+
+            <div class="mini-list">
+              <div>
+                <span class="dot green"></span>
+                Customer registered
+              </div>
+              <div>
+                <span class="dot blue"></span>
+                Order prepared
+              </div>
+              <div>
+                <span class="dot purple"></span>
+                Database updated
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <!-- RIGHT SECTION -->
-      <section class="card">
-        <h2>Our Services</h2>
-        <ul class="list">
-          <li>Customer Registration</li>
-          <li>Database Storage</li>
-          <li>Order Preparation Support</li>
-          <li>Customer Record Management</li>
-        </ul>
+      <!-- STATS -->
+      <section class="stats">
+        <div>
+          <h3>3-step</h3>
+          <p>registration workflow</p>
+        </div>
+
+        <div>
+          <h3>24/7</h3>
+          <p>digital access</p>
+        </div>
+
+        <div>
+          <h3>100%</h3>
+          <p>structured records</p>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section class="section" id="features">
+        <div class="section-head">
+          <p class="eyebrow">What we do</p>
+          <h2>Everything you need to manage customer orders properly.</h2>
+          <p>
+            A clean system for registering customers, organising information,
+            and supporting smooth order preparation.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="icon">01</div>
+            <h3>Customer Registration</h3>
+            <p>
+              Capture customer details clearly with a simple, structured
+              registration form.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon">02</div>
+            <h3>Record Management</h3>
+            <p>
+              Keep customer information organised and easy to access for future
+              order processing.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon">03</div>
+            <h3>Order Support</h3>
+            <p>
+              Prepare customer order information faster with clean data and
+              clear summaries.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon">04</div>
+            <h3>Simple Dashboard</h3>
+            <p>
+              View registered customer summaries and track customer records
+              without confusion.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="section process-section">
+        <div class="section-head">
+          <p class="eyebrow">How it works</p>
+          <h2>A simple workflow from customer details to order readiness.</h2>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card">
+            <span>1</span>
+            <h3>Register</h3>
+            <p>Add the customer’s name, email, and phone number.</p>
+          </div>
+
+          <div class="process-card">
+            <span>2</span>
+            <h3>Store</h3>
+            <p>Keep customer data safely organised in a structured format.</p>
+          </div>
+
+          <div class="process-card">
+            <span>3</span>
+            <h3>Manage</h3>
+            <p>Load customer summaries and use records for order processing.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta">
+        <div>
+          <p class="eyebrow">Ready to begin?</p>
+          <h2>Start registering customers in seconds.</h2>
+          <p>
+            Use the customer registration page to add new customers and view a
+            clean summary of registered records.
+          </p>
+        </div>
+
+        <a href="register.html" class="btn primary light">Register Customer</a>
       </section>
     </main>
 
     <footer class="footer">
-      <small>© <span id="year"></span> Order Processing Company</small>
+      <small>© <span id="year"></span> OrderFlow. Built for simple order processing.</small>
     </footer>
 
     <script>
