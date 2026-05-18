@@ -1,3 +1,26 @@
+:root {
+  --bg: #f7f8fc;
+  --text: #101828;
+  --muted: #667085;
+  --white: #ffffff;
+  --border: #e5e7eb;
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --dark: #0f172a;
+  --green: #16a34a;
+  --purple: #7c3aed;
+  --shadow: 0 24px 70px rgba(15, 23, 42, 0.12);
+  --radius: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* ===========================
    PREMIUM REGISTER PAGE ONLY
 =========================== */
