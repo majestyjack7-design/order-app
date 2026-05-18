@@ -3,63 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register Customers</title>
+    <title>Register Customers | OrderFlow</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+
+  <body class="register-layout">
     <header class="header">
       <div class="brand">
-        <div class="logo">OP</div>
+        <div class="logo">OF</div>
         <div>
           <h1>Customer Registration</h1>
-          <p>Fill the form to register customers into the database.</p>
+          <p>Add new customers and manage order-ready records.</p>
         </div>
       </div>
 
       <nav class="nav">
-        <a href="index.html">HOME</a>
+        <a href="index.html">Home</a>
         <a class="active" href="register.html">Register Customers</a>
       </nav>
     </header>
 
-    <main class="container">
-      <section class="card">
-        <h2>Registration Form</h2>
-
-        <form id="customerForm" class="form">
-          <label>
-            Full Name
-            <input type="text" id="name" required placeholder="e.g. Ada Uche" />
-          </label>
-
-          <label>
-            Email
-            <input
-              type="email"
-              id="email"
-              required
-              placeholder="e.g. ada@gmail.com"
-            />
-          </label>
-
-          <label>
-            Phone Number
-            <input
-              type="tel"
-              id="phone"
-              required
-              placeholder="e.g. 08012345678"
-            />
-          </label>
-
-          <button class="btn" type="submit">Register</button>
-          <p class="msg" id="msg"></p>
-        </form>
+    <main class="register-page">
+      <section class="register-hero">
+        <p class="eyebrow">Customer workflow</p>
+        <h2>Register customers with a clean, simple process.</h2>
+        <p>
+          Capture customer details, store accurate records, and keep your order
+          processing workflow organised.
+        </p>
       </section>
 
-      <section class="card">
+      <section class="register-grid">
+        <section class="card register-card">
+          <div class="card-top">
+            <div>
+              <p class="eyebrow">New customer</p>
+              <h2>Registration Form</h2>
+            </div>
+            <span class="form-badge">Secure Entry</span>
+          </div>
+
+          <form id="customerForm" class="form modern-form">
+            <label>
+              Full Name
+              <input type="text" id="name" required placeholder="e.g. Ada Uche" />
+            </label>
+
+            <label>
+              Email Address
+              <input type="email" id="email" required placeholder="e.g. ada@gmail.com" />
+            </label>
+
+            <label>
+              Phone Number
+              <input type="tel" id="phone" required placeholder="e.g. 08012345678" />
+            </label>
+
+            <button class="btn primary register-btn" type="submit">
+              Register Customer
+            </button>
+
+            <p class="msg" id="msg"></p>
+          </form>
+        </section>
+
+        <aside class="mini-dashboard">
+          <div class="mini-stat">
+            <span>Total Customers</span>
+            <strong id="sideTotal">0</strong>
+          </div>
+
+          <div class="mini-stat">
+            <span>Record Status</span>
+            <strong>Active</strong>
+          </div>
+
+          <div class="mini-note">
+            <h3>Quick Tip</h3>
+            <p>
+              Keep customer details accurate so order processing remains smooth
+              and easy to manage.
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="card summary-card">
         <div class="summary-head">
-          <h2>Registered Customers Summary</h2>
+          <div>
+            <p class="eyebrow">Customer records</p>
+            <h2>Registered Customers Summary</h2>
+          </div>
+
           <button class="btn outline" id="loadSummary" type="button">
             Load Summary
           </button>
@@ -82,7 +117,7 @@
     </main>
 
     <footer class="footer">
-      <small>© <span id="year"></span> Order Processing Company</small>
+      <small>© <span id="year"></span> OrderFlow. Built for simple order processing.</small>
     </footer>
 
     <script type="module" src="app.js"></script>
